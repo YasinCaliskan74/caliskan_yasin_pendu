@@ -23,6 +23,32 @@ namespace caliskan_yasin_pendu
         public MainWindow()
         {
             InitializeComponent();
+            startGame();
+        }
+        string guessword;
+        int vie = 5;
+
+        public void startGame()
+        {
+            List<string> ListWord = new List<string> { "SALUT", "", "CHINE", "CRABE", "ECART", "PIANO", "KAYAK", "HERBE", "RADIS", "BOCAL" };
+        }
+
+        private void BTN_Click(object sender, RoutedEventArgs e)
+        {
+            guessword.ToUpper();
+            Button btn = sender as Button;
+            string btnCont = btn.Content.ToString();
+        }
+
+        private void BT_Click(object sender, RoutedEventArgs e)
+        {
+            Button btn = sender as Button;
+            string btnContent = btn.Content.ToString();
+            btn.IsEnabled = false;
+            //votre function
         }
     }
 }
+
+
+
