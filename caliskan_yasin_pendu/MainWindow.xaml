@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:caliskan_yasin_pendu"
         mc:Ignorable="d"
-        Title="MainWindow" Height="900" Width="800">
+        Title="MainWindow" Height="700" Width="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="resource/image/clskn.jpg"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"></RowDefinition>
             <RowDefinition Height="6*"></RowDefinition>
@@ -57,60 +60,59 @@
                 <Grid.Resources>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Margin" Value="10"></Setter>
-                        <Setter Property="Background" Value="Blue"></Setter>
+                        <Setter Property="Background" Value="RoyalBlue"></Setter>
                         <Setter Property="FontSize" Value="28" ></Setter>
-                        <Setter Property="FontFamily" Value="Arial"></Setter>
-                        <Setter Property="BorderBrush" Value="Aqua"></Setter>
+                        <Setter Property="FontFamily" Value="algerian"></Setter>
+                        <Setter Property="BorderBrush" Value="BlueViolet"></Setter>
+                        <Style.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="15"></Setter>
+                            </Style>
+                        </Style.Resources>
+
                     </Style>
                 </Grid.Resources>
-                
-                <Button x:Name="BTN_B" Content="B" Grid.Row="0" Grid.Column="1"></Button>
-                <Button x:Name="BTN_C" Content="C" Grid.Row="0" Grid.Column="2"></Button>
-                <Button x:Name="BTN_D" Content="D" Grid.Row="0" Grid.Column="3"></Button>
-               
-                <Button x:Name="BTN_E" Content="E" Grid.Row="1" Grid.Column="0"></Button>
-                <Button x:Name="BTN_F" Content="F" Grid.Row="1" Grid.Column="1"></Button>
-                <Button x:Name="BTN_G" Content="G" Grid.Row="1" Grid.Column="2"></Button>
-                <Button x:Name="BTN_H" Content="H" Grid.Row="1" Grid.Column="3"></Button>
 
-                <Button x:Name="BTN_I" Content="I" Grid.Row="2" Grid.Column="0"></Button>
-                <Button x:Name="BTN_J" Content="J" Grid.Row="2" Grid.Column="1"></Button>
-                <Button x:Name="BTN_K" Content="K" Grid.Row="2" Grid.Column="2"></Button>
-                <Button x:Name="BTN_L" Content="L" Grid.Row="2" Grid.Column="3"></Button>
-
-                <Button x:Name="BTN_M" Content="M" Grid.Row="3" Grid.Column="0"></Button>
-                <Button x:Name="BTN_N" Content="N" Grid.Row="3" Grid.Column="1"></Button>
-                <Button x:Name="BTN_O" Content="O" Grid.Row="3" Grid.Column="2"></Button>
-                <Button x:Name="BTN_P" Content="P" Grid.Row="3" Grid.Column="3"></Button>
-
-                <Button x:Name="BTN_Q" Content="Q" Grid.Row="4" Grid.Column="0"></Button>
-                <Button x:Name="BTN_R" Content="R" Grid.Row="4" Grid.Column="1"></Button>
-                <Button x:Name="BTN_S" Content="S" Grid.Row="4" Grid.Column="2"></Button>
-                <Button x:Name="BTN_T" Content="T" Grid.Row="4" Grid.Column="3"></Button>
-
-                <Button x:Name="BTN_U" Content="U" Grid.Row="5" Grid.Column="0"></Button>
-                <Button x:Name="BTN_V" Content="V" Grid.Row="5" Grid.Column="1"></Button>
-                <Button x:Name="BTN_W" Content="W" Grid.Row="5" Grid.Column="2"></Button>
-                <Button x:Name="BTN_X" Content="X" Grid.Row="5" Grid.Column="3"></Button>
-
-                <Button x:Name="BTN_Y" Content="Y" Grid.Row="6" Grid.Column="0"></Button>
-                <Button x:Name="BTN_Z" Content="Z" Grid.Row="6" Grid.Column="1"></Button>
-                
+                <Button x:Name="BTN_A" Content="A" Grid.Row="0" Grid.Column="0" Click="BTN_Click"/>
+                <Button x:Name="BTN_B" Content="B" Grid.Row="0" Grid.Column="1" Click="BTN_Click"/>
+                <Button x:Name="BTN_C" Content="C" Grid.Row="0" Grid.Column="2" Click="BTN_Click"/>
+                <Button x:Name="BTN_D" Content="D" Grid.Row="0" Grid.Column="3" Click="BTN_Click"/>
+                <Button x:Name="BTN_E" Content="E" Grid.Row="1" Grid.Column="0" Click="BTN_Click"/>
+                <Button x:Name="BTN_F" Content="F" Grid.Row="1" Grid.Column="1" Click="BTN_Click"/>
+                <Button x:Name="BTN_G" Content="G" Grid.Row="1" Grid.Column="2" Click="BTN_Click"/>
+                <Button x:Name="BTN_H" Content="H" Grid.Row="1" Grid.Column="3" Click="BTN_Click"/>
+                <Button x:Name="BTN_I" Content="I" Grid.Row="2" Grid.Column="0" Click="BTN_Click"/>
+                <Button x:Name="BTN_J" Content="J" Grid.Row="2" Grid.Column="1" Click="BTN_Click"/>
+                <Button x:Name="BTN_K" Content="K" Grid.Row="2" Grid.Column="2" Click="BTN_Click"/>
+                <Button x:Name="BTN_L" Content="L" Grid.Row="2" Grid.Column="3" Click="BTN_Click"/>
+                <Button x:Name="BTN_M" Content="M" Grid.Row="3" Grid.Column="0" Click="BTN_Click"/>
+                <Button x:Name="BTN_N" Content="N" Grid.Row="3" Grid.Column="1" Click="BTN_Click"/>
+                <Button x:Name="BTN_O" Content="O" Grid.Row="3" Grid.Column="2" Click="BTN_Click"/>
+                <Button x:Name="BTN_P" Content="P" Grid.Row="3" Grid.Column="3" Click="BTN_Click"/>
+                <Button x:Name="BTN_Q" Content="Q" Grid.Row="4" Grid.Column="0" Click="BTN_Click"/>
+                <Button x:Name="BTN_R" Content="R" Grid.Row="4" Grid.Column="1" Click="BTN_Click"/>
+                <Button x:Name="BTN_S" Content="S" Grid.Row="4" Grid.Column="2" Click="BTN_Click"/>
+                <Button x:Name="BTN_T" Content="T" Grid.Row="4" Grid.Column="3" Click="BTN_Click"/>
+                <Button x:Name="BTN_U" Content="U" Grid.Row="5" Grid.Column="0" Click="BTN_Click"/>
+                <Button x:Name="BTN_V" Content="V" Grid.Row="5" Grid.Column="1" Click="BTN_Click"/>
+                <Button x:Name="BTN_W" Content="W" Grid.Row="5" Grid.Column="2" Click="BTN_Click"/>
+                <Button x:Name="BTN_X" Content="X" Grid.Row="5" Grid.Column="3" Click="BTN_Click"/>
+                <Button x:Name="BTN_Y" Content="Y" Grid.Row="6" Grid.Column="0" Click="BTN_Click"/>
+                <Button x:Name="BTN_Z" Content="Z" Grid.Row="6" Grid.Column="1" Click="BTN_Click"/>
             </Grid>
 
 
         </Grid>
 
-        <!--Zone Display-->
-        <Grid x:Name="Grd_Displaty" Grid.Row="2">
-         <TextBox x:Name="Grd_displaty" VerticalAlignment="Center" FontSize="40" IsReadOnly="True" Text="Réponse" TextAlignment="Center" FontFamily="Algerian" BorderBrush="Black"  Foreground="Aqua" />
-        </Grid>
 
+        <!--Zone Display-->
+        <Grid x:Name="Grd_Display" Grid.Row="2">
+            <TextBox x:Name="TB_display" VerticalAlignment="Center" FontSize="40" IsReadOnly="True" Text="Réponse" TextAlignment="Center" FontFamily="Algerian" BorderBrush="Black"  Foreground="Black" />
+        </Grid>
         <!--Zone Footer-->
         <Grid x:Name="Grd_Footer" Grid.Row="3">
-         
+            <TextBlock x:Name="TB_Lives" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10" />
         </Grid>
-
 
 
     </Grid>
